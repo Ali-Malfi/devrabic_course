@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe's portfolio</title>
+    <link rel="stylesheet" href="/website/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">John Doe</h1>
+        <nav class="header__nav-list">
+            <ul class="nav-list">
+                
+                   <li><a class="nav-list__link nav-list__link--active" href="#">Home</a></li> 
+                   <li><a class="nav-list__link" href="#about">About me</a></li>
+                   <li><a class="nav-list__link" href="#portfolio">Portfolio</a></li>  
+                   <li><a class="nav-list__link" href="#contact">Contact</a></li> 
+                
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="about" id="about">
+            <h2 class="about__title">About me</h2>
+            <p class="about__text">Hello I'm john Doe . aweb developer passionate about creating beautiful and functional website</p>
+            <p class="about__text">I specialize in front-end and back-end web development, and I love turing ideas into rality</p>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <h2 class="portfolio__title">My Portfolio</h2>
+
+            <div class="portfolio__cards">
+            <div class="project">
+                <img class="project__image" src="./images/portfolio-1.jpg" alt="project">
+                <h3 class="project__title">Eco-Friendely Travel App</h3>
+                <p class="project__description">An app that helps travelers find Eco-conscious accmmodations, activities, and offest their carbon footprint</p>
+                <button class="project__button">View project</button>
+            </div>
+
+            <div class="project">
+                <img class="project__image" src="./images/portfolio-2.jpg" alt="project">
+                <h3 class="project__title">Virtual Health and Fitness Community</h3>
+                <p class="project__description">An app that helps travelers find Eco-conscious accmmodations, activities, and offest their carbon footprint</p>
+                <button class="project__button">View project</button>
+            </div>
+
+            <div class="project">
+                <img class="project__image" src="./images/portfolio-3.jpg" alt="project">
+                <h3 class="project__title">Ai-Powered Personalized Learning Platform</h3>
+                <p class="project__description">An app that helps travelers find Eco-conscious accmmodations, activities, and offest their carbon footprint</p>
+                <button class="project__button">View project</button>
+            </div>
+        </div>
+        </section>
+
+        <section class="contact" id="#contact">
+            <h2 class="contact__title">Contact Me</h2>
+            <form class="contact__form">
+                <label class="contact__label" for="name">Name</label>
+                <input class="contact__input" type="text" id="name" name="name" required>
+
+                <br> <br>
+                <label class="contact__label" for="email">Email</label>
+                <input class="contact__input" type="email" id="email" name="email" required>
+                <br> <br>
+                <label class="contact__label" for="message">Message</label>
+                <textarea class="contact__textarea" name="message" id="message" rows="10"></textarea>
+                <br> <br>
+                <input class="contact__submit" type="submit" value="Send Message">
+            </form>
+
+
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 John Doe's Portfolio</p>
+    </footer>
+</body>
+</html>
